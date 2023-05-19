@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.my-container{
+    width: 80%; 
+    height: 600px;
+    margin: 60px auto;
+    display: flex; /*Necessário para o flexbox*/
+    background-color: #8a00cf;
+    border-radius: 8px;  
+    /*flex-direction: row;/*row (linha) | row-reverse | column | column-reverse;*/
+    /*flex-wrap: wrap; /*(embrulhar) nowrap | wrap | wrap-reverse*/
+    flex-flow: row wrap;
+    justify-content:space-around; /*Horizontal*/
+    align-items: flex-start;
+    align-content: space-around; /*Vertical*/
+}
+
+.my-item {
+    height: 50px;
+    background-color: #21f8bb;
+    border-radius: 8px;
+    padding: 30px;
+    border: 4px #ffff solid;
+    flex-basis: 15%; /*Como se fosse largura*/
+}
+
+
